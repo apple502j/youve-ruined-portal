@@ -1,38 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "youve-ruined-portal",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "You've Ruined Portal",
+  "description": "Fixes a bug in ruined portal datafixer that can happen when upgrading to 1.18.2.",
   "authors": [
-    "Me!"
+    "apple502j"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/apple502j/youve-ruined-portal"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "Apache-2.0",
+  "icon": "assets/youve-ruined-portal/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "youve-ruined-portal.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.12.12",
-    "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": ">=1.18.2-pre1",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
